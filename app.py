@@ -40,8 +40,9 @@ app.layout = html.Form(autoComplete="off", children=[
     dcc.Markdown('''
         # FBREF-3D
     
-        A dashboard for the visualising player data as scatter plots. Match statistics are from opta, scraped from 
-        fbref.com. Player information has been scraped from transfermarkt.com. 
+        A dashboard for the visualising player data as scatter plots. This will be hard to use on a phone. 
+        
+        Match statistics are from opta, scraped from fbref.com (last updated 06/05/2024). Player information scraped from transfermarkt.com (last updated 13/04/2024). 
         
         Some features which I think are useful:
         - Outliers are automatically calculated and annotated
@@ -50,9 +51,9 @@ app.layout = html.Form(autoComplete="off", children=[
         - Players can have seasons grouped together or they can be shown individually
         - Players can be filtered using a wide range of criteria
         - Hover over a marker to see information about that player
-        
-        To contact me (and for occasional blog posts) visit [here](https://arsestack.substack.com).
-        If you know how to make a dash app look nice please get in touch. 
+         
+        Contact me using [arsestack@gmail.com](arsestack@gmail.com). See my occasional blog posts at 
+        [arsestack.substack](https://arsestack.substack.com). 
         '''),
     Card([
         Row([
