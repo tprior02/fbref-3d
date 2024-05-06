@@ -196,8 +196,8 @@ def players_query(
         for season in range(18, 25):
             df_season = deepcopy(df)
             df_season.index = np.vectorize(lambda index: f'{index}{season}')(df_season.index)
-
             df_season['last_name'] = np.vectorize(lambda name: f'{name} ({season-1}/{season})')(df_season['last_name'])
+            df_season['name'] = np.vectorize(lambda name: f'{name} ({season-1}/{season})')(df_season['name'])
             dfs.append(df_season)
         df = pd.concat(dfs)
     return df
